@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Firebase</title>
+    </head>
+<script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCcGx_ii6Io74LZ2225bHp05ZVWHP8zEOY",
+    authDomain: "mytestfirebase-24f49.firebaseapp.com",
+    databaseURL: "https://mytestfirebase-24f49.firebaseio.com",
+    storageBucket: "mytestfirebase-24f49.appspot.com",
+    messagingSenderId: "188430047848"
+  };
+  firebase.initializeApp(config);
+  
+  function writeUserData(userId, name, password) {
+        db.ref('users/' + userId).set({
+        username: name,
+        userpassword: email
+    });
+  } 
+</script>
+    <body>
+
+    </body>
+</html>
