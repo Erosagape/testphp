@@ -1,28 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Test Firebase</title>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale-1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script scr="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
-<script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCcGx_ii6Io74LZ2225bHp05ZVWHP8zEOY",
-    authDomain: "mytestfirebase-24f49.firebaseapp.com",
-    databaseURL: "https://mytestfirebase-24f49.firebaseio.com",
-    storageBucket: "mytestfirebase-24f49.appspot.com",
-    messagingSenderId: "188430047848"
-  };
-  firebase.initializeApp(config);
-  
-  function writeUserData(userId, name, password) {
-        db.ref('users/' + userId).set({
-        username: name,
-        userpassword: email
-    });
-  } 
-</script>
     <body>
-
+        <div class="containter-fluid">
+            <H1>สวัสดีชาวโลก<small>ยินดีต้อนรับสู่เว็บ<abbr title="นายพุทธิพงษ์ คงพ่วง">ของเรา</abbr></small></H1>
+            <p><mark>This is hello from bootstrap</mark></p>
+            <p class="lead">ตัวอย่างการจัด Table ใน Bootstrap</p>            
+            <div class="row">
+                <div class="col-sm-4"><p class="text-primary">สี่แถวสำหรับแท็บเลต</p></div>
+                <div class="col-sm-8"><p class="text-primary">แปดแถวสำหรับแท็บเลต</p></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3"><p class="text-muted">สามแถวสำหรับมือถือ</p></div>
+                <div class="col-xs-3"><p class="text-muted">สามแถวสำหรับมือถือ</p></div>
+                <div class="col-xs-3"><p class="text-muted">สามแถวสำหรับมือถือ</p></div>
+                <div class="col-xs-3"><p class="text-muted">สามแถวสำหรับมือถือ</p></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6"><p class="text-success">หกแถวสำหรับคอมพิวเตอร์</p></div>
+                <div class="col-md-6"><p class="text-success">หกแถวสำหรับคอมพิวเตอร์</p></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2"><p class="text-info">สองแถวสำหรับจอใหญ่</p></div>
+                <div class="col-lg-4"><p class="text-warning">สี่แถวสำหรับจอใหญ่</p></div>
+                <div class="col-lg-6"><p class="text-danger">หกแถวสำหรับจอใหญ่</p></div>
+            </div>
+        </div>
+        <div class="container">
+            <h3>ประวัติผู้พัฒนา</h3>
+            <dl class="dl-horizontal">
+                <dt>ชื่อสกุล</dt><dd>นายพุทธิพงษ์ คงพ่วง (Mr.Phuthipong Kongpoung)</dd>
+                <dt>วันเกิด</dt><dd>4 กรกฏาคม 2523</dd>
+                <dt>อายุ</dt><dd>36 ปี</dd>
+                <dt>ภูมิลำเนา</dt><dd>
+                เป็นคนกรุงเทพโดยกำเนิด
+                แต่บรรพบุรุษอยู่โคราช จังหวัดนครราชสีมา</dd>
+            </dl>
+            <h4>เกี่ยวกับตัวฉัน</h4>          
+            <blockquote class="blockquote-reverse">
+                <p class="bg-primary">ยังโสด ทำงานเป็นโปรแกรมเมอร์ เคยฝันอยากเป็นนักร้องนักดนตรี</p> 
+                <p class="bg-info">ตั้งแต่อายุ 19 ปี นิสัยขี้อาย ไม่ชอบที่จะเป็นจุดสนใจ แต่ก็อยากให้คนสนใจอยู่นะ</p>
+                <p class="bg-success">ความฝันคืออยากจะเป็นเกมดีเวลลอปเปอร์ทำเกมดีๆ สักเกม</p>
+                <p class="bg-warning">แต่ตอนนี้ก็ทำได้แค่โปรแกรมเมอร์กากๆ คนนึง</p>
+                <p class="bg-danger">งานอดิเรกคือแต่งเพลงและแต่งกลอน และวิจารณ์การเมือง</p>
+            <footer>ต้องไขว่คว้าถึงจะได้มา ต้องตามหาถึงจะได้เจอ - คติประจำตัว</footer>                
+            </blockquote>
+            <p class="text-uppercase">about me</p>
+            <p class="text-capitalize">my name is boat,single,36 years old
+                <br/>graduated from ramkamhaeng university (BA philosophy)
+                <br/>i learn computer programming since 19 years old by myself
+            </p>
+            <p class="text-lowercase">PLEASE CONTACT ME : leoputti@hotmail.com</p>
+            <h5>Skill</h5>
+            <pre class="pre-scrollable">
+                VB,C#,PHP,Java,ASP.Net,Android,Java
+                SQL Server,MS Access,Oracle,Mysql
+                Microsoft Office,Windows,OSX,Ubuntu
+                Installation,Networking
+                Business Analyst,System Analyst
+                Tutor,Lecturer,IT Specialist
+            </pre>
+        </div>
+        <div class-"content">
+            <p class="text-uppercase">ตัวอย่างตาราง</p>
+            <table class="table table-bordered table-responsive table-hover table-condensed table-striped">
+                <thead>
+                    <tr>
+                        <th>ชื่อ</th>
+                        <th>นามสกุล</th>
+                        <th>ความสัมพันธ์</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="success">
+                        <td>Boonluck</td>
+                        <td>Sroisoongnern</td>
+                        <td>แม่</td>
+                    </tr>
+                    <tr class="danger">
+                        <td>Supoj</td>
+                        <td>Kongpoung</td>
+                        <td>พ่อ</td>
+                    </tr>
+                    <tr class="info">
+                        <td>Yechiela</td>
+                        <td>Pojanamesbaanstit</td>
+                        <td>เพื่อนสนิท</td>
+                    </tr>
+                    <tr class="warning">
+                        <td>supakporn</td>
+                        <td>imsuwan</td>
+                        <td>น้องสาว</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </body>
 </html>
